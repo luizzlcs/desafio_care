@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'form_client.dart';
 
 class CardFormRegister extends StatelessWidget {
