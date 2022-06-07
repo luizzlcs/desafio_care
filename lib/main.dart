@@ -1,4 +1,4 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:desafio_care/app/pages/list_client/card_list_view/classific_clintion.dart';
 import 'package:desafio_care/app/pages/list_client/list_client_page.dart';
 import 'package:desafio_care/app/pages/login/login.dart';
 import 'package:desafio_care/app/pages/register_client/register_client_page.dart';
@@ -10,8 +10,14 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
   await Firebase.initializeApp();
-  
-  runApp(const MyApp());
+
+  runApp(
+    MultiProvider(providers: [
+      ChangeNotifierProvider<ClassificationClient>(
+        create: (context) => ClassificationClient(),
+      ),
+    ], child: const MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
