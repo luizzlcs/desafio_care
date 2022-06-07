@@ -1,3 +1,4 @@
+import 'package:desafio_care/app/pages/list_client/card_list_view/config_classification.dart';
 import 'package:desafio_care/app/pages/list_client/top_bar.dart';
 import 'package:flutter/material.dart';
 import '../../../firebase_auth/auth_firebase_custom.dart';
@@ -24,6 +25,7 @@ class ListClientPage extends StatelessWidget {
                   SizedBox(height: 3),
                   TopBar(),
                   SizedBox(height: 16),
+                  ConfigClassification(),
                   SizedBox(height: 16),
                   CardOfBackground(),
                 ],
