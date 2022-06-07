@@ -18,8 +18,8 @@ class CardOfBackground extends StatelessWidget {
           bottomRight: Radius.circular(15),
         ),
       ),
-      child: Padding(
-        padding: const EdgeInsets.only(top: 7.9),
+      child: const Padding(
+        padding: EdgeInsets.only(top: 7.9),
         child: CardInternal(),
       ),
     );
